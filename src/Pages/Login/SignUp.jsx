@@ -21,7 +21,7 @@ const SignUp = () => {
   const [loaded, setLoaded] = useState(true);
 
   useEffect(() => {
-    initTWE({ Ripple, Input });
+    // initTWE({ Ripple, Input });
   }, []);
 
   const navigate = useNavigate();
