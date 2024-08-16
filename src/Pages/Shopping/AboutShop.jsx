@@ -12,7 +12,7 @@ const AboutShop = ({ product, checkproduct, setProduct }) => {
       }
       return product;
     });
-    setProduct(incressProduct);
+    setProduct(incressProduct);     
   };
   const decress = (prod, t) => {
     const decressProduct = product.map((product) => {

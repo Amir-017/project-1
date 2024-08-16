@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        myBg: "url('./src/Photos/hero-1.c081bcff664751bf4f02.jpg')",
+        // myBg: "url('./src/Photos/hero-1.c081bcff664751bf4f02.jpg')",
         mySmBg: "url('./src/Photos/3.1077aed96e883e0a7a00.jpg')",
         myIcons: "url('./src/Photos/تنزيل.png')",
       },

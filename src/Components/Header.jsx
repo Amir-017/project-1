@@ -6,6 +6,9 @@ import { Collapse, Dropdown, initTWE } from "tw-elements";
 import Swal from "sweetalert2";
 import boy from "/src/Photos/th.jpg";
 import girl from "/src/Photos/avatar-woman.jpg";
+import { TbHexagonLetterM } from "react-icons/tb";
+import { GiClothespin } from "react-icons/gi";
+
 const Header = () => {
   const [num, setNum] = useState(0);
 
@@ -31,14 +34,24 @@ const Header = () => {
   return (
     <nav className="w-full fixed flex   items-center justify-between py-2 shadow-dark-mild  bg-slate-100 lg:py-4 ">
       <div className=" ms-10 flex justify-evenly items-center w-full ">
-        <h1 className="w-[27%] text-2xl font-bold text-dark text-italic ">
-          Male Fashion
+        <h1 className="w-[27%] text-2xl font-bold text-dark text-italic flex ">
+          <TbHexagonLetterM className="text-3xl" />
+          ale Fashion{" "}
+          <span className="text-3xl text-blue-400">
+            <GiClothespin />
+          </span>
         </h1>
         <div className="font-bold w-1/4 text-start links	">
-          <Link className="me-3 ms-14 hover:underline hover:text-[red]" to="/">
+          <Link
+            className="me-3 ms-14 text-gray-500 hover:underline hover:text-[black]"
+            to="/"
+          >
             Home
           </Link>
-          <Link className="hover:underline hover:text-[red]" to="/shop">
+          <Link
+            className=" me-3 text-gray-500 hover:underline hover:text-[black]"
+            to="/shop"
+          >
             Shop
           </Link>
         </div>
