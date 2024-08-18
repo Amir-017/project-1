@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-
 const EditeProfile = () => {
   const [patchUser, setPatchUser] = useState(null);
 
@@ -37,16 +36,15 @@ const EditeProfile = () => {
   };
 
   return (
-    <div className="w-full h-screen">
-      <div className="w-full h-[5em] flex flex-col items-start justify-center  mb-5 ms-20">
-        <h1 className="italic font-bold text-3xl ">
+    <div className="w-full ">
+      <div className=" h-[5em] flex flex-col items-start justify-center  mb-5 ms-5 mt-32">
+        <h1 className="italic font-bold text-3xl underline flex">
           My Profile Ready To Change...
         </h1>
-        <hr className="w-full " />
       </div>
 
       <div className="w-full flex flex-col items-center">
-        <div className="w-3/4 relative mb-3" data-twe-input-wrapper-init>
+        <div className="w-3/4  mb-3" data-twe-input-wrapper-init>
           <label htmlFor="exampleFormControlInputUsername">UserName</label>
           <input
             value={!patchUser ? "" : patchUser.username}
@@ -59,11 +57,11 @@ const EditeProfile = () => {
             placeholder="Example label"
           />
         </div>
-        <div className="container flex justify-center me-[60em]">
-          <p className="mb-10 text-neutral-400">change Your Username</p>
+        <div className="container flex justify-center ">
+          <p className="mb-10 text-neutral-400 ms-5">change Your Username</p>
         </div>
         {/*  */}
-        <div className="w-3/4 relative mb-3" data-twe-input-wrapper-init>
+        <div className="w-3/4  mb-3" data-twe-input-wrapper-init>
           <label htmlFor="exampleFormControlInputEmail">Email</label>
           <input
             value={!patchUser ? "" : patchUser.email}
@@ -76,14 +74,14 @@ const EditeProfile = () => {
             placeholder="Example label"
           />
         </div>
-        <div className="container flex justify-center me-[39em]">
+        <div className=" flex justify-center ms-5">
           <p className="mb-10 text-neutral-400">
             once you change your mail you have to re-confirm it from your mail
             box.
           </p>
         </div>
         {/*  */}
-        <div className="w-3/4 relative mb-3">
+        <div className="w-3/4  mb-3">
           <label htmlFor="exampleFormControlInputPassword">Password</label>
           <input
             value={!patchUser ? "" : patchUser.password}
@@ -96,11 +94,11 @@ const EditeProfile = () => {
             placeholder="Example label"
           />
         </div>
-        <div className="container ms-[24rem] text-neutral-400 mb-8">
+        <div className=" text-neutral-400 mb-8 ms-5">
           <p className="">Your new password shall be more than 6 characters</p>
         </div>
         {/*  */}
-        <div className="w-3/4 relative mb-3">
+        <div className="w-3/4  mb-3">
           <label htmlFor="exampleFormControlInputGender">Gender</label>
           <select
             value={!patchUser ? "" : patchUser.gender}
@@ -116,11 +114,11 @@ const EditeProfile = () => {
             <option>female</option>
           </select>
         </div>
-        <div className="container ms-[24rem] text-neutral-400 mb-8">
+        <div className=" text-neutral-400 mb-8 ms-5">
           <p className="">Please note that we dont't support homosexuality.</p>
         </div>
       </div>
-      <div className="w-[32em] flex justify-center">
+      <div className=" flex justify-center md:justify-end  w-full md:w-[16rem] lg:w-[18rem] mb-5">
         <Link>
           <button
             onClick={edite}

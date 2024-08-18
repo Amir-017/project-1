@@ -3,7 +3,7 @@
     {
       "id": 1,
       "items": "1",
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptopss",
       "price": 109.95,
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       "category": "men's clothing",
@@ -180,15 +180,6 @@
       "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
       "category": "women's clothing",
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
-    },
-    {
-      "items": "1",
-      "title": "amer",
-      "price": "78",
-      "description": "amer",
-      "category": "amer",
-      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-      "id": 21
     }
   ],
   "users": [
@@ -196,16 +187,17 @@
       "username": "saidd",
       "email": "said@gmail.com",
       "password": "2222",
-      "role": "member",
+      "role": "admin",
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
-      "id": 3
+      "id": 3,
+      "amer": ""
     },
     {
       "username": "mariam",
       "email": "mariam@gmail.com",
       "password": "6666",
-      "role": "member",
+      "role": "admin",
       "gender": "female",
       "userImage": "/src/Photos/avatar-woman.jpg",
       "id": 4
@@ -214,7 +206,7 @@
       "username": "hady",
       "email": "hady@gmail.com",
       "password": "7777",
-      "role": "member",
+      "role": "admin",
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
       "id": 5
@@ -223,7 +215,7 @@
       "username": "mahmod",
       "email": "mahmod@gmail.com",
       "password": "9999",
-      "role": "member",
+      "role": "admin",
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
       "id": 6
@@ -232,7 +224,7 @@
       "username": "amira",
       "email": "amira@gmail.com",
       "password": "8585",
-      "role": "member",
+      "role": "admin",
       "gender": "female",
       "userImage": "/src/Photos/avatar-woman.jpg",
       "id": 7
@@ -245,13 +237,22 @@
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
       "id": 8
+    },
+    {
+      "username": "rama",
+      "email": "rama@gmail.com",
+      "password": "123123",
+      "role": "admin",
+      "gender": "female",
+      "userImage": "/src/Photos/avatar-woman.jpg",
+      "id": 9
     }
   ],
   "user": {
     "username": "amer ahmed",
     "email": "amer@gmail.com",
     "password": "1111",
-    "role": "member",
+    "role": "admin",
     "gender": "male",
     "userImage": "/src/Photos/th.jpg",
     "id": 8

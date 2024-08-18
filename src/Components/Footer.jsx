@@ -27,7 +27,7 @@ const Footer = () => {
               The customer is at the heart of our unique business model, which
               includes design.
             </p>
-            <img src={icons} className="mt-10" />
+            <img src={icons} className="mt-40" />
           </div>
           <div>
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr />
+      {/* <hr /> */}
 
       <div className="bg-black/5 p-6 text-center">
         <span>© 2023 Copyright</span>

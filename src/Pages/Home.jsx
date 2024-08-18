@@ -11,42 +11,51 @@ const Home = () => {
   return (
     <div className="">
       <div
-        className="  bg-cover bg-no-repeat bg-center   w-full h-screen"
+        className="  bg-cover bg-no-repeat bg-center    "
         style={{
           backgroundImage:
             'url("./src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
         }}
       >
-        <div className="container mx-auto flex flex-col justify-center items-start h-screen ">
+        <div className="mt-20 ms-10 flex flex-col justify-start md:justify-center   w-[94%] md:w-[100%] lg:w-full  md:h-[100vh] ">
           <div className="">
-            <h1 className="text-orange-500  font-bold text-2xl">
+            <h1 className="mt-10 text-orange-500  font-bold md:text-2xl">
               SUMMER COLLECTION
             </h1>
-            <h1 className="text-5xl ">Fall - Winter</h1>
-            <h1 className="text-5xl ">Collections 2023</h1>
+            <h1 className=" text-xl md:text-3xl lg:text-5xl ">Fall-Winter</h1>
+            <h1 className="text-xl md:text-3xl lg:text-5xl ">
+              Collections 2023
+            </h1>
           </div>
 
           <div className="text-start mt-5 text-gray-700">
             <p>A specialist label creating luxury essentials.</p>
             <p>Ethically crafted with an unwavering commitment </p>
             <p>to exceptional quality.</p>
-            <button
-              type="button"
-              className="font-bold mt-10  inline-block rounded bg-primary px-[10rem] pb-4 pt-4 text-xs  uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-            >
-              Shop Now
-            </button>
+            <Link to="/shop">
+              <button
+                type="button"
+                className="font-bold mt-10 mb-10  inline-block rounded bg-primary px-[3rem] md:px-[7rem] lg:px-[10rem] pb-4 pt-4 text-xs  uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              >
+                Shop Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="mt-10">
         <div className="w-full flex justify-evenly flex-col md:flex-row ">
           <div className="  flex flex-col justify-center items-center mb-5 md:mb-0 ">
-            <h1 className=" font-bold text-4xl text-slate-500">Clothing</h1>
-            <h1 className=" font-bold text-4xl text-slate-500">
+            <h1 className=" font-bold text-2xl md:text-4xl text-slate-500">
+              Clothing
+            </h1>
+            <h1 className=" font-bold text-2xl md:text-4xl text-slate-500">
               Collection 2023
             </h1>
-            <Link className="text-gray-700  text-end font-bold  hover:text-[black] hover:underline  ">
+            <Link
+              to="/shop"
+              className="text-gray-700  text-end font-bold  hover:text-[black] hover:underline  "
+            >
               Shop Now
             </Link>
           </div>
@@ -67,8 +76,13 @@ const Home = () => {
               className="rounded-2xl w-[40%] md:w-[50%] lg:w-[100%] "
             />
           </div>
-          <h1 className="text-3xl font-bold text-slate-500">Accessories</h1>
-          <Link className="text-gray-700   font-bold  hover:text-[black] hover:underline text-center  ">
+          <h1 className="md:text-3xl text-2xl   font-bold text-slate-500">
+            Accessories
+          </h1>
+          <Link
+            to="/shop"
+            className="text-gray-700   font-bold  hover:text-[black] hover:underline text-center  "
+          >
             Shop Now
           </Link>{" "}
         </div>
@@ -79,10 +93,13 @@ const Home = () => {
               className="rounded-2xl w-[40%] md:w-[50%] lg:w-[100%] "
             />
           </div>
-          <h1 className="text-3xl font-bold text-slate-500">
+          <h1 className="text-2xl md:text-3xl font-bold text-slate-500">
             Shoes Spring 2023
           </h1>
-          <Link className="text-gray-700   font-bold  hover:text-[black] hover:underline text-center  ">
+          <Link
+            to="/shop"
+            className="text-gray-700   font-bold  hover:text-[black] hover:underline text-center  "
+          >
             Shop Now
           </Link>{" "}
         </div>
@@ -95,29 +112,29 @@ const Home = () => {
       </div>
 
       {/*  */}
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10  container mx-auto ">
-        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-full ">
+      <div className="ms-5 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mb-10   ">
+        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-[90%] ">
           <img
             src={clothes1}
             className="rounded-2xl w-[70%] md:w-[90%] lg:w-full"
           />
           <h1 className="text-3xl mt-3 font-bold text-start">0$</h1>
         </div>
-        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-full ">
+        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-[90%] ">
           <img
             src={shirt}
             className=" rounded-2xl w-[70%] md:w-[90%] lg:w-full"
           />
           <h1 className="mt-3 text-3xl font-bold">150$</h1>
         </div>
-        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-full ">
+        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-[90%] ">
           <img
             src={clothes2}
             className="rounded-2xl w-[70%] md:w-[90%] lg:w-full"
           />
           <h1 className="mt-3 text-3xl font-bold">600$</h1>
         </div>
-        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-full ">
+        <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-[90%] ">
           <img
             src={bantalon}
             className="rounded-2xl  w-[70%] md:w-[90%] lg:w-full"

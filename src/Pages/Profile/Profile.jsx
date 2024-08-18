@@ -17,15 +17,14 @@ const Profile = () => {
   }, []);
   // console.log(use);
   return (
-    <div className="w-full ">
-      <div className="w-full h-[5em] flex flex-col items-start justify-center  ms-10">
-        <h1 className="italic font-bold text-2xl ">My Profile</h1>
-        <hr className="w-full " />
+    <div className="w-full container mx-auto ">
+      <h1 className="text-black text-4xl mt-32 uppercase ms-5 italic  underline decoration-gray-600 font-bold text-center md:text-start">
+        my profile :
+      </h1>
+      <div className="flex justify-center items-center  mt-20 ">
+        <img src={user ? user.userImage : ""} className="w-[60%] md:w-[30%]" />
       </div>
-      <div className="flex justify-center items-center ">
-        <img src={user ? user.userImage : ""} />
-      </div>
-      <div className="italic flex flex-col items-start justify-center mt-10 ms-10 mb-10">
+      <div className="italic flex flex-col items-start justify-center mt-10 ms-10 mb-10 ">
         <h1 className="font-bold text-[green] text-2xl">
           {user ? user.username : ""}
         </h1>
@@ -33,9 +32,9 @@ const Profile = () => {
           I'm {user ? user.gender : ""} and I'm {user ? user.role : ""} in this
           site
         </p>
-        <hr className="w-full" />
+        <hr className="border-t-4 w-[17rem]   border-black rounded" />
       </div>
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center ">
         <div className="w-3/4 relative mb-3">
           <label htmlFor="exampleFormControlInputUser">UserName</label>
           <input
@@ -47,8 +46,8 @@ const Profile = () => {
             placeholder="Example label"
           />
         </div>
-        <div className="container flex justify-center me-[25em]">
-          <p className="mb-10 text-neutral-400">
+        <div className=" flex justify-center ">
+          <p className="mb-10 text-neutral-400 ms-5 md:ms-0">
             Better to have real name to give a good impression to others that
             they are deaing with a real personality
           </p>
@@ -65,8 +64,8 @@ const Profile = () => {
             placeholder="Example label"
           />
         </div>
-        <div className="container flex justify-center me-[23em]">
-          <p className="mb-10 text-neutral-400">
+        <div className=" flex justify-center ">
+          <p className="mb-10 text-neutral-400 ms-5 md:ms-0">
             Better to have readable email to give a good impression to others
             that they are deaing with a real personality
           </p>
@@ -83,11 +82,13 @@ const Profile = () => {
             <option>{!user ? "" : user.gender}</option>
           </select>
         </div>
-        <div className="container ms-[24rem] text-neutral-400 mb-8">
-          <p className="">Please note that we dont't support homosexuality.</p>
+        <div className="container text-center text-neutral-400 mb-8">
+          <p className="ms-5 md:ms-0">
+            Please note that we dont't support homosexuality.
+          </p>
         </div>
       </div>
-      <div className="w-[32em] flex justify-center ">
+      <div className="flex justify-center md:justify-end  w-full md:w-[15rem] lg:w-[17rem] ">
         <Link to={`/profile/${user && user.id}`}>
           <button
             type="button"

@@ -24,11 +24,14 @@ const AddProduct = () => {
     });
   };
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-secondary-700">
-      <div className=" mx-auto   rounded-lg  p-6 ">
-        <section className="rounded me-10   w-[35em] h-[30em] flex-col flex justify-center items-center ">
+    <div className=" mt-24 w-full h-screen   my-5 flex justify-center items-center">
+      <div className="w-[100%] h-screen bg-purple-500 rounded-2xl mx-10 flex justify-center items-center ">
+        <section className="rounded    w-[20em] h-[30em]  flex-col flex justify-center items-center">
           <div className="relative mb-12" data-twe-input-wrapper-init>
-            <label htmlFor="" className="text-white font-bold">
+            <label
+              htmlFor=""
+              className="text-white font-bold text-center md:text-start "
+            >
               Title
             </label>
 
@@ -41,14 +44,17 @@ const AddProduct = () => {
                 })
               }
               type="text"
-              className="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full rounded border-2 border-gray-950 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-black data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-500 dark:autofill:shadow-autofill dark:peer-focus:text-black [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputTitle"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />
           </div>
           <div className="relative mb-6" data-twe-input-wrapper-init>
-            <label htmlFor="" className="text-white font-bold">
+            <label
+              htmlFor=""
+              className="text-white font-bold text-center md:text-start "
+            >
               Price
             </label>
             <input
@@ -60,13 +66,16 @@ const AddProduct = () => {
                 })
               }
               type="number"
-              className="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full rounded border-2 border-gray-950 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-black data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-500 dark:autofill:shadow-autofill dark:peer-focus:text-black [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputPrice"
               placeholder="Password"
             />
           </div>
           <div className="relative mb-6" data-twe-input-wrapper-init>
-            <label htmlFor="" className="text-white font-bold">
+            <label
+              htmlFor=""
+              className="text-white font-bold text-center md:text-start "
+            >
               Description
             </label>
             <input
@@ -78,13 +87,16 @@ const AddProduct = () => {
                 })
               }
               type="text"
-              className="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full rounded border-2 border-gray-950 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-black data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-500 dark:autofill:shadow-autofill dark:peer-focus:text-black [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputDescription"
               placeholder="Password"
             />
           </div>
           <div className="relative mb-6" data-twe-input-wrapper-init>
-            <label htmlFor="" className="text-white font-bold">
+            <label
+              htmlFor=""
+              className="text-white font-bold text-center md:text-start "
+            >
               Category
             </label>
             <input
@@ -96,13 +108,16 @@ const AddProduct = () => {
                 })
               }
               type="text"
-              className="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full rounded border-2 border-gray-950 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-black data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-500 dark:autofill:shadow-autofill dark:peer-focus:text-black [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputCategory"
               placeholder="Password"
             />
           </div>
-          <div className="relative mb-6" data-twe-input-wrapper-init>
-            <label htmlFor="" className="text-white font-bold">
+          <div className=" mb-6 w-60" data-twe-input-wrapper-init>
+            <label
+              htmlFor=""
+              className="text-white font-bold text-center md:text-start "
+            >
               Image
             </label>
             <input
@@ -113,8 +128,8 @@ const AddProduct = () => {
                   image: e.target.value,
                 })
               }
-              type="text"
-              className="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              type="file"
+              className="peer block  w-full  rounded border-2 border-gray-950 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-black data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-500 dark:autofill:shadow-autofill dark:peer-focus:text-black [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleInputCategory"
               placeholder="Password"
             />
@@ -122,7 +137,7 @@ const AddProduct = () => {
           <button
             onClick={handleForm}
             type="onclick"
-            className="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            className="text-black inline-block rounded bg-transparent border-2 border-success-500 hover:bg-success-500  px-6 pb-2 pt-2.5 text-xs font-bold uppercase leading-normal  shadow-primary-3 transition duration-150 ease-in-out  hover:shadow focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             data-twe-ripple-init
             data-twe-ripple-color="light"
           >
