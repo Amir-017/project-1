@@ -75,12 +75,15 @@ const SignUp = () => {
       });
     }
   };
+  const backAStep = () => {
+    navigate(-1);
+  };
   // console.log(gender);
   return (
-    <div className="flex items-center   w-full  bg-[#C0C0C0]">
+    <div className="flex items-center justify-center flex-col  w-full  bg-[#C0C0C0]">
       <form
         onSubmit={(e) => handleForm(e)}
-        className="mt-16 mb-5 mx-auto block max-w-md rounded-l p-6  "
+        className="mt-[6rem] mb-5 mx-auto block max-w-md rounded-l p-6  "
       >
         <div className="grid grid-cols-1 gap-4">
           <div className="relative mb-6">
@@ -98,7 +101,7 @@ const SignUp = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               type="text"
-              className="text-black peer block min-h-[auto] w-full rounded border-2 bg-white px-3 py-[0.32rem] "
+              className="text-black peer  block min-h-[auto] w-full rounded border-2 bg-white px-3 py-[0.32rem] "
               id="exampleInput124"
             />
           </div>
@@ -162,7 +165,7 @@ const SignUp = () => {
 
         <button
           type="submit"
-          className="inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          className="inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-bold uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
           data-twe-ripple-init
           data-twe-ripple-color="light"
         >
@@ -176,6 +179,16 @@ const SignUp = () => {
           )}
         </button>
       </form>
+      <div className="w-full text-center pb-10 ">
+        <button
+          onClick={backAStep}
+          type="button"
+          className="inline-block bg-blue-400 rounded border-2 border-info px-16 pb-[10px] pt-2 text-xs font-bold uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-info-600 hover:bg-info-50/50 hover:text-white focus:border-info-600 focus:bg-info-50/50 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 motion-reduce:transition-none dark:hover:bg-cyan-950 dark:focus:bg-cyan-950"
+          data-twe-ripple-init
+        >
+          Back A Step
+        </button>
+      </div>
     </div>
   );
 };

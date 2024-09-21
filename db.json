@@ -190,14 +190,13 @@
       "role": "admin",
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
-      "id": 3,
-      "amer": ""
+      "id": 3
     },
     {
       "username": "mariam",
       "email": "mariam@gmail.com",
       "password": "6666",
-      "role": "admin",
+      "role": "member",
       "gender": "female",
       "userImage": "/src/Photos/avatar-woman.jpg",
       "id": 4
@@ -206,7 +205,7 @@
       "username": "hady",
       "email": "hady@gmail.com",
       "password": "7777",
-      "role": "admin",
+      "role": "member",
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
       "id": 5
@@ -215,7 +214,7 @@
       "username": "mahmod",
       "email": "mahmod@gmail.com",
       "password": "9999",
-      "role": "admin",
+      "role": "member",
       "gender": "male",
       "userImage": "/src/Photos/th.jpg",
       "id": 6
@@ -224,7 +223,7 @@
       "username": "amira",
       "email": "amira@gmail.com",
       "password": "8585",
-      "role": "admin",
+      "role": "member",
       "gender": "female",
       "userImage": "/src/Photos/avatar-woman.jpg",
       "id": 7
@@ -242,19 +241,19 @@
       "username": "rama",
       "email": "rama@gmail.com",
       "password": "123123",
-      "role": "admin",
+      "role": "member",
       "gender": "female",
       "userImage": "/src/Photos/avatar-woman.jpg",
       "id": 9
     }
   ],
   "user": {
-    "username": "amer ahmed",
-    "email": "amer@gmail.com",
-    "password": "1111",
+    "username": "saidd",
+    "email": "said@gmail.com",
+    "password": "2222",
     "role": "admin",
     "gender": "male",
     "userImage": "/src/Photos/th.jpg",
-    "id": 8
+    "id": 3
   }
 }

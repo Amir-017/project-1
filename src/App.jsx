@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
-import Shop from "./Pages/Shopping/Shop";
+// import Shop from "./Pages/Shopping/Shop";
 import Footer from "./Components/Footer";
 import Axios from "axios";
 import AboutShop from "./Pages/Shopping/AboutShop";
@@ -17,10 +17,12 @@ import Products from "./Pages/AboutAdmin/ProductsOfAdmin/Products";
 import AddProduct from "./Pages/AboutAdmin/ProductsOfAdmin/AddProduct";
 import Editeproduct from "./Pages/AboutAdmin/ProductsOfAdmin/Editeproduct";
 import NotFound from "./Pages/NotFound";
+import Shop from "./Pages/Shopping/Shop";
 
 const App = () => {
   //
   const [users, setUsers] = useState([]);
+  const [num, setNum] = useState(0);
   const [user, setUser] = useState({});
   const [getUser, setGetUser] = useState(false);
   const [getusersOfAdmin, setGetusersOfAdmin] = useState(false);
@@ -60,7 +62,7 @@ const App = () => {
 
   return (
     <div className="">
-      <Header />
+      <Header num={num} />
       {/* first pages */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -72,6 +74,8 @@ const App = () => {
               setProduct={setProduct}
               product={product}
               setcheckProduct={setcheckProduct}
+              num={num}
+              setNum={setNum}
             />
           }
         />
@@ -82,6 +86,8 @@ const App = () => {
               product={product}
               setProduct={setProduct}
               checkproduct={checkproduct}
+              num={num}
+              setNum={setNum}
             />
           }
         />

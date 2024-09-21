@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Input, initTWE } from "tw-elements";
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -16,15 +16,19 @@ const Profile = () => {
     getinguser();
   }, []);
   // console.log(use);
+  const navigate = useNavigate();
+  const backAStep = () => {
+    navigate(-1);
+  };
   return (
-    <div className="w-full container mx-auto ">
-      <h1 className="text-black text-4xl mt-32 uppercase ms-5 italic  underline decoration-gray-600 font-bold text-center md:text-start">
+    <div className="w-full container mx-auto flex flex-col justify-center items-center ">
+      <h1 className="text-black text-2xl md:text-3xl lg:text-4xl mt-32 uppercase ms-5 italic  underline decoration-gray-600 font-bold w-full text-center md:text-start">
         my profile :
       </h1>
       <div className="flex justify-center items-center  mt-20 ">
-        <img src={user ? user.userImage : ""} className="w-[60%] md:w-[30%]" />
+        <img src={user ? user.userImage : ""} className="w-[60%] md:w-[100%]" />
       </div>
-      <div className="italic flex flex-col items-start justify-center mt-10 ms-10 mb-10 ">
+      <div className="w-full italic flex flex-col items-start justify-start mt-10 ms-10 mb-10 ">
         <h1 className="font-bold text-[green] text-2xl">
           {user ? user.username : ""}
         </h1>
@@ -88,7 +92,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center md:justify-end  w-full md:w-[15rem] lg:w-[17rem] ">
+      <div className="flex justify-center items-center   w-[50%]  ">
         <Link to={`/profile/${user && user.id}`}>
           <button
             type="button"
@@ -98,6 +102,16 @@ const Profile = () => {
             Edite Profile
           </button>
         </Link>
+      </div>
+      <div className="w-full text-center mb-2 ">
+        <button
+          onClick={backAStep}
+          type="button"
+          className="inline-block bg-blue-400 rounded border-2 border-info px-16 pb-[10px] pt-2 text-xs font-bold uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-info-600 hover:bg-info-50/50 hover:text-white focus:border-info-600 focus:bg-info-50/50 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 motion-reduce:transition-none dark:hover:bg-cyan-950 dark:focus:bg-cyan-950"
+          data-twe-ripple-init
+        >
+          Back A Step
+        </button>
       </div>
     </div>
   );

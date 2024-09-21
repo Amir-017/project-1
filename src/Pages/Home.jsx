@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <div className="">
       <div
-        className="  bg-cover bg-no-repeat bg-center    "
+        className="  bg-cover bg-no-repeat md:bg-center bg-right-top    "
         style={{
           backgroundImage:
             'url("./src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
         }}
       >
-        <div className="mt-20 ms-10 flex flex-col justify-start md:justify-center   w-[94%] md:w-[100%] lg:w-full  md:h-[100vh] ">
+        <div className="mt-20 px-5 flex flex-col justify-start md:justify-center   w-[94%] md:w-[100%] lg:w-full  md:h-[100vh] ">
           <div className="">
             <h1 className="mt-10 text-orange-500  font-bold md:text-2xl">
               SUMMER COLLECTION
@@ -105,14 +105,14 @@ const Home = () => {
         </div>
       </div>
       {/*    */}
-      <div className="w-full flex justify-center items-center h-[10vh] mt-10 bg-mySmBg mb-10 ">
+      <div className="bg-local w-full flex justify-center items-center h-[20vh] mt-10 bg-[url('./src/Photos/3.1077aed96e883e0a7a00.jpg')] mb-10 overflow-auto  ">
         <h1 className="text-3xl text-white font-bold italic">
           Free shipping, 30-day return or refund guarantee.
         </h1>
       </div>
 
       {/*  */}
-      <div className="ms-5 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mb-10   ">
+      <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mb-10 ps-10  ">
         <div className="w-full flex flex-col justify-center items-center md:w-[90%] lg:w-[90%] ">
           <img
             src={clothes1}

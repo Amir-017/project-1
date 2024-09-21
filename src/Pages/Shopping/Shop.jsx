@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+// import swal from "sweetalert";
+const Shop = ({
+  products,
+  setProduct,
+  product,
+  setcheckProduct,
+  num,
+  setNum,
+}) => {
+  // const [noLogin, setNoLogin] = useState(false);
 
-const Shop = ({ products, setProduct, product, setcheckProduct }) => {
   const sendProduct = (prod) => {
-    setProduct([...product, prod]);
+    const check = product.some((t) => {
+      return t.id == prod.id;
+    });
+
+    if (check) {
+      setNum((num += 1));
+      const incressProduct = product.map((product) => {
+        if (product == prod) {
+          product.items++;
+        }
+        return product;
+      });
+      setProduct(incressProduct);
+    } else {
+      setNum((num += 1));
+      setProduct([...product, prod]);
+    }
   };
   const navigate = useNavigate();
   const backAStep = () => {
@@ -11,18 +37,18 @@ const Shop = ({ products, setProduct, product, setcheckProduct }) => {
   };
 
   return (
-    <div className="w-full  bg-white">
-      <div className="w-[70%] md:w-[90%] bg-gray-300 rounded-xl px-20 container mx-auto mb-10 pt-10 pb-10 ">
+    <div className="mt-5 w-full   bg-white">
+      <div className=" w-full md:w-[90%] bg-gray-300 rounded-xl px-20 container mx-auto mb-10 pt-10 pb-10 ">
         <div className="    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center  ">
           {products.map((product, i) => (
             <div
               key={i}
-              className="mx-20 flex justify-center items-center flex-col   mt-10     border-2 bg-white w-full rounded-2xl gap-10 "
+              className="mx-20 flex justify-center items-center flex-col   mt-20     border-2 bg-white w-[80%] md:w-full rounded-2xl gap-10 "
             >
               <a href="#!">
-                <div className="w-full flex justify-center items-center rounded-full ">
+                <div className=" w-full lg:w-full flex justify-center items-center rounded-full ">
                   <img
-                    className="w-[70%] md:w-[70%] mt-10 rounded-full  "
+                    className=" w-[50%] md:w-[50%] lg:w-[70%] mt-10 rounded-full  "
                     src={product.image}
                     alt=""
                   />
@@ -42,6 +68,7 @@ const Shop = ({ products, setProduct, product, setcheckProduct }) => {
           ))}
         </div>
       </div>
+
       <div className="w-full text-center my-10 ">
         <button
           onClick={backAStep}

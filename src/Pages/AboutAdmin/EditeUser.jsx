@@ -22,12 +22,12 @@ const EditeUser = () => {
     axios({
       method: "patch",
       url: `http://localhost:3000/users/${editeid}`,
-      data: user,
+      data: patchUser,
     }).then((res) => {
       axios({
         method: "patch",
         url: `http://localhost:3000/user`,
-        data: user,
+        data: patchUser,
       }).then((res) => {
         setTimeout(() => {
           navigate("/controluser");
@@ -35,9 +35,11 @@ const EditeUser = () => {
       });
     });
   };
-
+  const backAStep = () => {
+    navigate(-1);
+  };
   return (
-    <div className="w-full ">
+    <div className="w-full flex justify-center items-center flex-col ">
       <div className=" h-[5em] flex flex-col items-start justify-center  mb-5 ms-5 mt-32">
         <h1 className="italic font-bold text-3xl underline flex">
           My Profile Ready To Change...
@@ -119,7 +121,7 @@ const EditeUser = () => {
           <p className="">Please note that we dont't support homosexuality.</p>
         </div>
       </div>
-      <div className=" flex justify-center md:justify-end  w-full md:w-[16rem] lg:w-[18rem] mb-5">
+      <div className=" flex justify-center items-center   w-[50%]  mb-5">
         <Link>
           <button
             onClick={edite}
@@ -130,6 +132,16 @@ const EditeUser = () => {
             Edite Profile
           </button>
         </Link>
+      </div>
+      <div className="w-full text-center my-10 ">
+        <button
+          onClick={backAStep}
+          type="button"
+          className="inline-block bg-blue-400 rounded border-2 border-info px-16 pb-[10px] pt-2 text-xs font-bold uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-info-600 hover:bg-info-50/50 hover:text-white focus:border-info-600 focus:bg-info-50/50 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 motion-reduce:transition-none dark:hover:bg-cyan-950 dark:focus:bg-cyan-950"
+          data-twe-ripple-init
+        >
+          Back A Step
+        </button>
       </div>
     </div>
   );

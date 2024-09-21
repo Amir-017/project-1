@@ -19,7 +19,6 @@ const Editeproduct = () => {
   // console.log(product);
 
   const editeItems = () => {
-    // console.log("hello");
     axios({
       method: "patch",
       url: `http://localhost:3000/products/${id}`,
@@ -28,11 +27,13 @@ const Editeproduct = () => {
       navigate("/products");
     });
   };
-
+  const backAStep = () => {
+    navigate(-1);
+  };
   return (
-    <div className="w-full h-screen flex justify-center items-center  mt-20 mb-5 ">
-      <div className="  w-[100%] h-screen bg-purple-500 rounded-2xl mx-10 flex justify-center items-center">
-        <section className="rounded me-10   w-[35em] h-[30em] flex-col flex justify-center items-center ">
+    <div className=" w-full h-screen flex flex-col justify-center items-center  mt-32 mb-5 ">
+      <div className="  w-[100%] h-screen bg-purple-500 rounded-2xl mx-10 flex flex-col justify-center items-center">
+        <section className="rounded     md:w-[35em] h-[30em] flex-col flex justify-center items-center ">
           <div className="relative mb-6" data-twe-input-wrapper-init>
             <label htmlFor="" className="text-white font-bold">
               Title
@@ -114,9 +115,19 @@ const Editeproduct = () => {
             data-twe-ripple-init
             data-twe-ripple-color="light"
           >
-            Add Product
+            Edite Product
           </button>
         </section>
+        <div className="w-full text-center pt-10 me-5 ">
+          <button
+            onClick={backAStep}
+            type="button"
+            className="inline-block bg-blue-400 rounded border-2 border-info px-16 pb-[10px] pt-2 text-xs font-bold uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-info-600 hover:bg-info-50/50 hover:text-white focus:border-info-600 focus:bg-info-50/50 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 motion-reduce:transition-none dark:hover:bg-cyan-950 dark:focus:bg-cyan-950"
+            data-twe-ripple-init
+          >
+            Back A Step
+          </button>
+        </div>
       </div>
     </div>
   );
