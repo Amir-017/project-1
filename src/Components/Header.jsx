@@ -35,12 +35,12 @@ const Header = ({ num }) => {
   return (
     <div className="">
       <nav
-        className=" fixed top-0 flex w-full   justify-between  py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-gray-800 lg:flex-wrap lg:justify-start lg:py-4"
+        className=" fixed top-0 flex w-full   justify-between  py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-[#EBEDEF] lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
       >
         <div className="  w-full flex  flex-wrap items-center justify-between px-3">
           <div className="w-[75%] lg:w-[95%]">
-            <a className="text-xl text-black dark:text-white" href="/">
+            <a className="text-xl text-black dark:text-black" href="/">
               <h1 className="relative lg:ms-16 text-xl md:text-2xl font-bold text-dark text-italic flex lg:justify-center md:justify-start ">
                 <TbHexagonLetterM className=" md:mt-0 text-2xl md:text-4xl" />
                 ale Fashion{" "}
@@ -82,13 +82,13 @@ const Header = ({ num }) => {
             >
               <div className="font-bold mb-5     lg:1/4 text-end md:text-center lg:text-start links	">
                 <Link
-                  className="me-3 ms-0 lg:ms-14 text-gray-500 hover:underline hover:text-[white]"
+                  className="me-3 ms-0 lg:ms-14 text-gray-600  hover:text-[black] focus:underline focus:decoration-red-500 "
                   to="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className=" me-3 text-gray-500 hover:underline hover:text-[white]"
+                  className=" me-3 text-gray-600  hover:text-[black] focus:underline focus:decoration-red-500 "
                   to="/shop"
                 >
                   Shop
@@ -202,7 +202,7 @@ const Header = ({ num }) => {
                     </div>
                   ) : (
                     <Link to="/signin">
-                      <CiLogout className="text-3xl text-white " />
+                      <CiLogout className="text-3xl text-[blue]  " />
                     </Link>
                   )}
                 </div>
@@ -212,10 +212,14 @@ const Header = ({ num }) => {
                 >
                   <div className="flex relative me-5">
                     <Link to={`/aboutshop`}>
-                      <FaLock className="text-2xl  mt-1 text-white" />
+                      <FaLock className="text-2xl  mt-1 text-black" />
                     </Link>
 
-                    <h1 className="bg-[red] text-white rounded-full w-[25px] h-[25px] text-center absolute bottom-[17px] left-[15px]">
+                    <h1
+                      className={` ${
+                        num >= 1 ? "bg-[blue]" : "bg-[red]"
+                      } text-white rounded-full w-[25px] h-[25px] text-center absolute bottom-[17px] left-[15px]`}
+                    >
                       {num}
                     </h1>
                   </div>

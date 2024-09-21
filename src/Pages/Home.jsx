@@ -13,8 +13,7 @@ const Home = () => {
       <div
         className="  bg-cover bg-no-repeat md:bg-center bg-right-top    "
         style={{
-          backgroundImage:
-            'url("./src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
+          backgroundImage: 'url("/src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
         }}
       >
         <div className="mt-20 px-5 flex flex-col justify-start md:justify-center   w-[94%] md:w-[100%] lg:w-full  md:h-[100vh] ">
