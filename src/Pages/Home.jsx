@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="">
       <div
-        className="bg-[url(/src/photos/hero-1.c081bcff664751bf4f02.jpg)]  bg-cover bg-no-repeat md:bg-center bg-right-top    "
+        className="bg-[url('/src/photos/hero-1.c081bcff664751bf4f02.jpg')]  bg-cover bg-no-repeat md:bg-center bg-right-top    "
         // style={{
         //   backgroundImage: 'url("/src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
         // }}
