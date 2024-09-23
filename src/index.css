@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.myImg {
+  background-image: url("/src/photos/hero-1.c081bcff664751bf4f02.jpg");
+}

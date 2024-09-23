@@ -6,12 +6,14 @@ import clothes1 from "/src/Photos/1.51632eafdeaa828f5207.jpg";
 import shirt from "/src/Photos/2.0654d29911db1fb90896.jpg";
 import clothes2 from "/src/Photos/3.1077aed96e883e0a7a00.jpg";
 import bantalon from "/src/Photos/4.4376b13ee596258fb3ac.jpg";
+import myBg from "/src/Photos/hero-1.c081bcff664751bf4f02.jpg";
+
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="">
       <div
-        className="bg-[url('/src/photos/hero-1.c081bcff664751bf4f02.jpg')]  bg-cover bg-no-repeat md:bg-center bg-right-top    "
+        className={`myImg  bg-cover bg-no-repeat md:bg-center bg-right-top `}
         // style={{
         //   backgroundImage: 'url("/src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
         // }}
