@@ -6,40 +6,41 @@ import clothes1 from "/src/Photos/1.51632eafdeaa828f5207.jpg";
 import shirt from "/src/Photos/2.0654d29911db1fb90896.jpg";
 import clothes2 from "/src/Photos/3.1077aed96e883e0a7a00.jpg";
 import bantalon from "/src/Photos/4.4376b13ee596258fb3ac.jpg";
-
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="">
-      <div
-        className={`bg-[url("/src/Photos/hero-1.c081bcff664751bf4f02.jpg")]  bg-cover bg-no-repeat md:bg-center bg-right-top `}
-        // style={{
-        //   backgroundImage: 'url("/src/Photos/hero-1.c081bcff664751bf4f02.jpg")',
-        // }}
-      >
-        <div className="mt-20 px-5 flex flex-col justify-start md:justify-center   w-[94%] md:w-[100%] lg:w-full  md:h-[100vh] ">
-          <div className="">
-            <h1 className="mt-10 text-orange-500  font-bold md:text-2xl">
-              SUMMER COLLECTION
-            </h1>
-            <h1 className=" text-xl md:text-3xl lg:text-5xl ">Fall-Winter</h1>
-            <h1 className="text-xl md:text-3xl lg:text-5xl ">
-              Collections 2023
-            </h1>
-          </div>
+      <div className="relative h-full w-full">
+        <img
+          src="/src/Photos/hero-1.c081bcff664751bf4f02.jpg"
+          alt="image 1"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 grid h-full w-full place-items-start  bg-black/40">
+          <div className=" px-5 flex flex-col justify-start  md:justify-center   w-[94%] md:w-[100%]   md:h-[100vh] h-[75vh] ">
+            <div className="">
+              <h1 className="mt-10 text-orange-500  font-bold md:text-2xl">
+                SUMMER COLLECTION
+              </h1>
+              <h1 className=" text-xl md:text-3xl lg:text-5xl ">Fall-Winter</h1>
+              <h1 className="text-xl md:text-3xl lg:text-5xl ">
+                Collections 2023
+              </h1>
+            </div>
 
-          <div className="text-start mt-5 text-gray-700">
-            <p>A specialist label creating luxury essentials.</p>
-            <p>Ethically crafted with an unwavering commitment </p>
-            <p>to exceptional quality.</p>
-            <Link to="/shop">
-              <button
-                type="button"
-                className="font-bold mt-10 mb-10  inline-block rounded bg-primary px-[3rem] md:px-[7rem] lg:px-[10rem] pb-4 pt-4 text-xs  uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
-                Shop Now
-              </button>
-            </Link>
+            <div className="text-start mt-5 text-gray-700">
+              <p>A specialist label creating luxury essentials.</p>
+              <p>Ethically crafted with an unwavering commitment </p>
+              <p>to exceptional quality.</p>
+              <Link to="/shop">
+                <button
+                  type="button"
+                  className="font-bold mt-10 mb-10  inline-block rounded bg-primary px-[3rem] md:px-[7rem] lg:px-[10rem] pb-4 pt-4 text-xs  uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                >
+                  Shop Now
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -35,6 +35,7 @@ const Shop = ({
   const backAStep = () => {
     navigate(-1);
   };
+  console.log(products);
 
   return (
     <div className="mt-5 w-full   bg-white">

@@ -35,7 +35,7 @@ const Header = ({ num }) => {
   return (
     <div className="">
       <nav
-        className=" fixed top-0 flex w-full   justify-between  py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-[#EBEDEF] lg:flex-wrap lg:justify-start lg:py-4"
+        className=" sticky top-0 z-10 flex w-full   justify-between  py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-[#EBEDEF] lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
       >
         <div className="  w-full flex  flex-wrap items-center justify-between px-3">

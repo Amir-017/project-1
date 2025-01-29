@@ -40,6 +40,7 @@ const App = () => {
   useEffect(() => {
     getProducts();
   }, []);
+
   const getUsers = () => {
     Axios({
       method: "get",
@@ -59,6 +60,7 @@ const App = () => {
   useEffect(() => {
     obj();
   }, []);
+  console.log(products);
 
   return (
     <div className="">
